@@ -20,6 +20,6 @@ $ python main.py
 
 $ cat promos.txt
 
-Note: This is still a demo version so if there are any errors, you can contact me directly!\n( Ini masih demo versi jadi jika ada kesalahan, langsung hubungi saya! )
+Note: This is still a demo version so if there are any errors, you can contact me directly! ( Ini masih demo versi jadi jika ada kesalahan, langsung hubungi saya! )
 
 # Code BY MORGAN STORE
