@@ -30,7 +30,7 @@ class Discord:
 				print(f" Promotion Nitro 1 Month Claimed , saved promos.txt !!")
 		except Exception as e:
 			None
-      
+
 print("""
 Opera GX x Discord BY MORGAN STORE
 \n""")
