@@ -35,6 +35,6 @@ print("""
 Opera GX x Discord BY MORGAN STORE
 \n""")
 
-with concurrent.futures.ThreadPoolExecutor(maxworkers=2) as pool:
+with executor = concurrent.futures.ThreadPoolExecutor(maxworkers=2) as pool:
 	while True:
 		pool.submit(Discord().auto_claim)
