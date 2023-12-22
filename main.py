@@ -1,8 +1,5 @@
-try:
-	import requests as r, uuid
-	from concurrent.futures import ThreadPoolExecutor
-except Exception as e:
-	None
+import requests as r, uuid
+from concurrent.futures import ThreadPoolExecutor
 
 class Discord:
 	
@@ -27,14 +24,14 @@ class Discord:
 		try:
 			with open("promos.txt","a") as f:
 				f.write(f"https://discord.com/billing/partner-promotions/1180231712274387115/{boost.json()['token']}\n")
-				print(f" Promotion Nitro 1 Month Claimed , saved promos.txt !!")
+				print(f"[+] Berhasil Claim Promo Link!!\n")
 		except Exception as e:
 			None
-
+      
 print("""
 Opera GX x Discord BY MORGAN STORE
 \n""")
 
-with executor = concurrent.futures.ThreadPoolExecutor(maxworkers=10) as pool:
-	while True:
-		pool.submit(Discord().auto_claim)
+with ThreadPoolExecutor(max_workers=10) as executor:
+    while True:
+        executor.submit(Discord().auto_claim)
